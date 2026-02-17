@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let userInput = passInput.value;
         if (userInput === correctPassword) {
             document.getElementById("content").style.display = "block";
-            document.querySelector("video").play();
+            document.querySelector(".form").style.display = "none";
         } else {
             alert("Mot de passe incorrect. Essayez encore.");
         }
