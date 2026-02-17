@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   const { password } = req.body;
 
   if (password === process.env.SITE_PASSWORD) {
@@ -6,4 +6,4 @@ export default function handler(req, res) {
   } else {
     res.status(401).json({ success: false });
   }
-}
+};
